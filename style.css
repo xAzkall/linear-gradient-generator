@@ -1,0 +1,80 @@
+body {
+  font: "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  top: 15%;
+  background: linear-gradient(to right, red, yellow);
+  margin: 0 auto;
+}
+
+h1 {
+  font: 600 3.5rem "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  width: 100%;
+}
+
+h3 {
+  font: 900 1em "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.btn-random {
+  display: block;
+  font: 600 1em "Raleway", sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+
+.btn-random:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 1);
+}
+
+.h3-wrapper {
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  font: 900 1em "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  letter-spacing: 0.01em;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alert-animate {
+  animation: hideAlert 2s ease-in;
+}
+
+@keyframes hideAlert {
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
